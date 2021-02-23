@@ -17,14 +17,4 @@ def get_user_manual(major_colors = MAJOR_COLORS, minor_colors = MINOR_COLORS):
     user_manual = dict(zip(keys, color_pair))
     return user_manual
 
-def get_major_colors_index(major_index):
-    return MAJOR_COLORS[major_index]
 
-def get_minor_colors_index(minor_index):
-    return MINOR_COLORS[minor_index]
-
-def get_major_colors_value(major_index):
-    return MAJOR_COLORS.index(major_index)
-
-def get_minor_colors_value(minor_index):
-    return MINOR_COLORS.index(minor_index)
