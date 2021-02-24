@@ -13,8 +13,11 @@ def get_user_manual(major_colors = MAJOR_COLORS, minor_colors = MINOR_COLORS):
     color_pair= []
     for major_color in major_colors:
         for minor_color in minor_colors: 
-            color_pair.append( f'{major_color} {minor_color}')
+            color_pair.append( f'{major_color} & {minor_color}')
     user_manual = dict(zip(keys, color_pair))
     return user_manual
 
-
+def print_user_manual():
+    user_manual = get_user_manual()
+    for key, value in user_manual.items():
+        print(f"\nPair: {key} --> {value}")
